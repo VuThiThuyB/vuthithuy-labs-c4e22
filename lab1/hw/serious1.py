@@ -1,9 +1,6 @@
 from gmail import GMail,Message
 import datetime
 
-t = datetime.datetime.now()
-
-print(t.hour)
 
 gmail = GMail('vuthuyfptk11@gmail.com','20091997')
 
@@ -17,6 +14,7 @@ html_content='''
 msg = Message('ĐƠN XIN NGHỈ HỌC',to='vuthuyfptk11@gmail.com',html=html_content)
 
 while True:
+    t = datetime.datetime.now()
     if t.hour:
         gmail.send(msg)
         break

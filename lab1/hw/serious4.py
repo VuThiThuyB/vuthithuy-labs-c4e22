@@ -8,17 +8,17 @@ uri = "mongodb://admin:admin@ds021182.mlab.com:21182/c4e"
 client = MongoClient(uri)
 db = MongoClient(uri)
 
-customers = db["customers"]
 db = client.get_default_database()
+customers = db["customers"]
 #customer_list = customers.find()
 
 count_events = customers.find({"ref":"events"}).count()
 count_wom = customers.find({"ref":"wom"}).count()
 count_ads = customers.find({"ref":"ads"}).count()
 
-print("Events: {}".format(count_events))
-print("Word of mouth: {}".format(count_wom))
-print("Advertisements: {}".format(count_ads))
+# print("Events: {}".format(count_events))
+# print("Word of mouth: {}".format(count_wom))
+# print("Advertisements: {}".format(count_ads))
 
 
 labels = ["Events","Wom","Ads"]
