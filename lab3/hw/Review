@@ -1,0 +1,21 @@
+1. Why should we use functions at all?
+  In Python, a function is a named sequence of statements that belong together. Their primary
+purpose is to help us organize programs into chunks that match how we think about the problem.
+2. How to define/declare a function?
+  define :  A header line which begins with a keyword def and ends with a colon.
+  declare : Declare the function with the keyword def followed by the function’s name and ends with a colon
+     ex : def draw_square(t, sz):
+3. How to call/use a function?
+  Import function location , and it self if only need that on .
+  Write the function’s name followed by value of the parameter enclosed in parentheses (if there is any)
+4. What is return, why and how do we use it?
+  The return statement causes your function to exit and hand back a value to its caller. 
+  The return statement is used when a function is ready to return a value to its caller. 
+  In the end of a function, we write “return" with the value we want
+5. Do we have to use return in every function?
+   Yes
+6. What are function arguments/parameters, why and how we use it?
+   The parameters specifies what information, if any, we have to provide in order to use the new function. 
+   We use it by write it in the parentheses when declaring a function
+7. How to use function from a different file other than our currently working file?
+   We import the file that has the function we want to use and the import the specific funtion in that file if we only need that one
